@@ -35,6 +35,18 @@ const ResultadoContainer = styled.div`
   }
 
   @media only screen and (max-width: 768px) {
+    .destaque-vermelho {
+      font-size: 1.5rem;
+    }
+
+    .destaque-laranja {
+      font-size: 1.5rem;
+    }
+
+    .destaque-verde {
+      font-size: 1.5rem;
+    }
+
     .resultado__img-dinamica {
       max-width: 80vw;
       max-height: 20vh;
