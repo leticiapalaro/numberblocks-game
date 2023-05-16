@@ -49,7 +49,7 @@ const ResultadoContainer = styled.div`
 
     .resultado__img-dinamica {
       max-width: 80vw;
-      max-height: 30vh;
+      max-height: 40vh;
     }
   }
 `
