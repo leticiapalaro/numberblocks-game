@@ -33,6 +33,13 @@ const ResultadoContainer = styled.div`
     color: white;
     text-shadow: 2px 2px 0px rgba(0, 0, 0, 1);
   }
+
+  @media only screen and (max-width: 768px) {
+    .resultado__img-dinamica {
+      max-width: 80vw;
+      max-height: 20vh;
+    }
+  }
 `
 
 export const Resultado = (numeroAlvo, numeroEscolhido, numerosEscolhidos, contador, imgDinamica) => {
