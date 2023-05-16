@@ -1,0 +1,31 @@
+import styled from 'styled-components';
+
+const PistaResultadoContainer = styled.p`
+    padding: 1rem;
+    border-radius: 50%;
+    margin: 0px;
+    margin-bottom: 1rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+
+  .logo-numberblocks{
+    max-height: 30vh;
+    max-width: 70vw;
+  }
+
+  @media only screen and (min-width: 1024px) {
+    .logo-numberblocks{
+      width: 20vw;
+    }
+  }
+`
+
+export const PistaResultado = (props) => {
+  return(
+    <PistaResultadoContainer>
+        <img src="./img/numberblocks-logo.webp" className="logo-numberblocks" alt='logo numberblocks'/><br />
+        {props.pista}
+    </PistaResultadoContainer>
+  )
+}

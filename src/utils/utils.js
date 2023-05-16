@@ -1,0 +1,1 @@
+export const gerarNumeroAleatorio = (numeroMaximo) => Math.floor(Math.random() * (numeroMaximo+1))
