@@ -8,6 +8,9 @@ const CabecalhoContainer = styled.nav`
   align-items: center;
   text-align: center;
   border-radius: 0 0 50% 50%;
+  position: fixed;
+  top: 0;
+  width: 100%;
 
   .cabecalho__menu__link {
     text-decoration: none;

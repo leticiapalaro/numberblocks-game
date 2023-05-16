@@ -3,7 +3,7 @@ import LinksNavegacao from '../../components/LinksNavegacao';
 
 const HomeContainer = styled.div`
   width: 40vw;
-  margin: 1rem auto;
+  margin: 6rem auto;
   display: flex;
   flex-direction: column;
   background: url('./img/background2.png');

@@ -7,7 +7,7 @@ const Erro404Container = styled.div`
   color: black;
   width: 50vw;
   height: 50vh;
-  margin: 1rem auto;
+  margin: 6rem auto;
   border-radius: 40px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   text-align: center;
