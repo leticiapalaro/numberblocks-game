@@ -16,7 +16,7 @@ const PistaResultadoContainer = styled.p`
 
   @media only screen and (min-width: 1024px) {
     .logo-numberblocks{
-      width: 20vw;
+      display: none;
     }
   }
 `
