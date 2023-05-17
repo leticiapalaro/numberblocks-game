@@ -43,7 +43,7 @@ export const Erro404 = () => {
     <Erro404Container>
       <div className="mensagem-erro">
         <h2>Erro404</h2>
-        <p>Muitos Numberblocks procuraram sua página mas não encontraram.<br/>
+        <p>Muitos Numberblocks procuraram sua página, mas não encontraram.<br/>
         Talvez um desses links possa te ajudar:</p>
         <LinksNavegacao/>
       </div>
