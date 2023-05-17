@@ -11,7 +11,7 @@ const PistaResultadoContainer = styled.p`
 
   .logo-numberblocks{
     max-height: 30vh;
-    max-width: 70vw;
+    max-width: 50vw;
   }
 
   @media only screen and (max-width: 768px) {
