@@ -6,7 +6,14 @@ export const Adivinhar = () => {
 
   return (
     <BaseJogos
-      fraseInicialResultado={(<>Tente acertar<br/><span className="destaque-roxo">o número secreto!</span></>)}
+      fraseInicialResultado={(
+        <>
+          <p className="apenas-mobile">Tente acertar<br />
+            <span className="destaque destaque-amarelo">o número secreto!</span></p>
+          <p className="apenas-desktop">Vamos jogar? Escolha um número entre 0 e 10 para tentar acertar<br />
+            <span className="destaque destaque-amarelo">o número secreto!</span></p>
+        </>
+      )}
       valorAlvo={numeros[0]}
       resultadoComImgDinamica={true}
       resetarOperacaoMatematica={resetarNumerosAleatorios}

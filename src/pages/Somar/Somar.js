@@ -6,7 +6,7 @@ export const Somar = () => {
 
   return (
     <BaseJogos
-      fraseInicialResultado={(<>Acerte o resultado da<br/><span className="destaque-roxo">SOMA</span></>)}
+      fraseInicialResultado={(<>Acerte o resultado da<br/><span className="destaque destaque-amarelo">SOMA</span></>)}
       valorAlvo={somar}
       resultadoComImgDinamica={true}
       resetarOperacaoMatematica={resetarNumerosAleatorios}

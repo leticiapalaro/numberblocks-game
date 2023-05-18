@@ -6,7 +6,7 @@ export const Subtrair= () => {
 
   return (
     <BaseJogos
-      fraseInicialResultado={(<>Acerte o resultado da<br/><span className="destaque-roxo">SUBTRAÇÃO</span></>)}
+      fraseInicialResultado={(<>Acerte o resultado da<br/><span className="destaque destaque-amarelo">SUBTRAÇÃO</span></>)}
       valorAlvo={subtrair}
       resultadoComImgDinamica={true}
       resetarOperacaoMatematica={resetarNumerosAleatorios}

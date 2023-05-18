@@ -6,9 +6,9 @@ export const Multiplicar = () => {
 
   return (
     <BaseJogos
-      fraseInicialResultado={(<>Acerte o resultado da<br/><span className="destaque-roxo">MULTIPLICAÇÃO</span></>)}
+      fraseInicialResultado={(<>Acerte o resultado da<br/><span className="destaque destaque-amarelo">MULTIPLICAÇÃO</span></>)}
       valorAlvo={multiplicar}
-      resultadoComImgDinamica={multiplicar <= 40? true : false}
+      resultadoComImgDinamica={multiplicar <= 25? true : false}
       resetarOperacaoMatematica={resetarNumerosAleatorios}
       numerosOperacaoMatematica={numeros}
       escalaImgNumeros={1.3}

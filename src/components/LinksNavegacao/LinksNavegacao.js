@@ -6,10 +6,10 @@ const Link = styled(LinkStyles)``
 export const LinksNavegacao = () => {
   return (
     <>
-      <Link to='/adivinhar'>☆ Adivinhar ☆</Link>
-      <Link to='/somar'>☆ Somar ☆</Link>
-      <Link to='/subtrair'>☆ Subtrair ☆</Link>
-      <Link to='/multiplicar'>☆ Multiplicar ☆</Link>
+      <Link to='/adivinhar'>☆ Adivinhar ☆<br/>[?]</Link>
+      <Link to='/somar'>☆ Somar ☆<br/>[+]</Link>
+      <Link to='/subtrair'>☆ Subtrair ☆<br/>[-]</Link>
+      <Link to='/multiplicar'>☆ Multiplicar ☆<br/>[x]</Link>
     </>
   )
 }

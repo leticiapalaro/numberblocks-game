@@ -2,27 +2,21 @@ import styled from 'styled-components';
 import LinksNavegacao from '../../components/LinksNavegacao';
 
 const HomeContainer = styled.div`
-  width: 40vw;
-  margin: 6rem auto;
-  display: flex;
-  flex-direction: column;
-  background: url('./img/background2.png');
+  background: url('./img/background2.webp');
   background-size: cover;
-  border-radius: 40px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-  padding: 1rem;
-  text-align: center;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  height: 70vh;
+  margin: 5vh 10vw;
+  padding: 5vh 5vw;
+  width: 80vw;
 
-  .img-logo {
-    width: 30vw;
+  @media screen and (min-width: 1024px) {
+    width: 40vw;
+    height: 80vh;
     margin: auto;
-  }
 
-  @media only screen and (max-width: 768px) {
-    width: 85vw;
-
-    .img-logo {
-      width: 80vw;
+    img {
+      width: 30vw;
     }
   }
 `

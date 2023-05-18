@@ -1,83 +1,69 @@
 import styled from 'styled-components';
 
 const ResultadoContainer = styled.div`
-  .destaque-vermelho {
-    font-size: 2rem;
-    color: red;
-    text-shadow: 2px 2px 0px rgba(255, 255, 0, 1);
-  }
-
-  .destaque-laranja {
-    font-size: 2rem;
-    color: #ff9000;
-    text-shadow: 2px 2px 0px rgba(255, 255, 0, 1);
-  }
-
-  .destaque-verde {
-    font-size: 2rem;
-    color: green;
-    text-shadow: 2px 2px 0px rgba(255, 255, 0, 1);
-  }
+  color: #1976D2;
 
   .resultado__img-dinamica {
-    max-width: 80vw;
-    max-height: 50vh;
+    height:20vh;
   }
 
   .resultado-estatico {
-    font-size: 30vh;
-    margin: 0 auto;
-    background: #1976d2;
-    border-radius: 50%;
-    width: 40vh;
-    color: white;
-    text-shadow: 2px 2px 0px rgba(0, 0, 0, 1);
+    font-size: 5rem;
   }
 
-  @media only screen and (max-width: 768px) {
-    .destaque-vermelho {
-      font-size: 1.5rem;
+  .area-img-numeros {
+    margin-top: 1.5rem;
+  }
+
+  @media screen and (min-width: 1024px) {
+    font-size: 1.5rem;
+
+    .destaque {
+      font-size: 2rem;
     }
 
-    .destaque-laranja {
-      font-size: 1.5rem;
-    }
-
-    .destaque-verde {
-      font-size: 1.5rem;
+    .area-img-numeros{
+      width: 16vw;
+      height: 16vw;
     }
 
     .resultado__img-dinamica {
-      max-width: 80vw;
-      max-height: 40vh;
+      height:30vh;
+    }
+
+    .resultado-estatico {
+      font-size: 13rem;
+      color: green;
     }
   }
 `
 
 export const Resultado = (numeroAlvo, numeroEscolhido, numerosEscolhidos, contador, imgDinamica) => {
   if (numeroEscolhido == numeroAlvo) {
-    return(
+    return (
       <ResultadoContainer>
-        {imgDinamica && <img src={`./img/${numeroAlvo}.webp`} className="resultado__img-dinamica" alt={`imagem do número ${numeroAlvo}`}/>}
-        {!imgDinamica &&
-          <p className="resultado-estatico">{numeroAlvo}</p>
-        }
+        <div className='area-img-numeros'>
+          {imgDinamica && <img src={`./img/${numeroAlvo}.webp`} className="resultado__img-dinamica" alt={`imagem do número ${numeroAlvo}`} />}
+          {!imgDinamica &&
+            <p className="resultado-estatico">{numeroAlvo}</p>
+          }
+        </div>
         <br />
         Parabéns!<br />
         Você acertou em<br />
-        <span className="destaque-verde">{contador} {contador == 1 ? 'tentativa' : 'tentativas'}</span>
+        <span className="destaque destaque-verde">{contador} {contador == 1 ? 'tentativa' : 'tentativas'}</span>
       </ResultadoContainer>
     )
-  }else{
+  } else {
     let frasePista = (
-      <>O número misterioso é<br />
+      <>Olha a dica!<br />
         {numeroEscolhido < numeroAlvo ?
-          (<><span className="destaque-vermelho">MAIOR </span>do que <span className="destaque-vermelho">{numeroEscolhido}</span>!</>) :
-          (<><span className="destaque-laranja">MENOR </span>do que <span className="destaque-laranja">{numeroEscolhido}</span>!</>)}
+          (<><span className="destaque destaque-vermelho">MAIOR </span>do que <span className="destaque destaque-vermelho">{numeroEscolhido}</span>!</>) :
+          (<><span className="destaque destaque-laranja">MENOR </span>do que <span className="destaque destaque-laranja">{numeroEscolhido}</span>!</>)}
       </>
     )
 
-    if (numerosEscolhidos.includes(numeroEscolhido)) frasePista = (<><span className="destaque-vermelho">Esse já foi!</span><br />{frasePista}</>)
+    if (numerosEscolhidos.includes(numeroEscolhido)) frasePista = (<><span className="destaque destaque-vermelho">Esse já foi!</span><br />{frasePista}</>)
 
     return <ResultadoContainer>{frasePista}</ResultadoContainer>
   }

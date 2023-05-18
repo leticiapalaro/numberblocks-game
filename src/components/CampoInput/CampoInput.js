@@ -4,32 +4,15 @@ import styled from 'styled-components';
 
 const StyledInput = styled(TextField)`
   && {
-    .MuiInputLabel-root {
-      color: #1976d2;
-      font-size: 1.5rem;
-    }
-
-    .MuiFormHelperText-root {
-      color: #1976d2;
-      font-size: 1rem;
-    }
-
-    .MuiInputBase-root {
-      color: #1976d2;
-      font-size: 1.5rem;
-      padding-left: 40%;
-    }
-
-    .Mui-focused {
-      color: #1976d2;
-    }
-
-    @media only screen and (max-width: 1024px) {
       .MuiFormHelperText-root {
-        font-size: 0.7rem;
+        color: #1976D2;
+      }
+
+      .MuiInputBase-input {
+        color: yellow;
+        background: rgba(0,0,0,0.5);
       }
     }
-  }
 `
 
 export const CampoInput = (props) => {
@@ -47,6 +30,7 @@ export const CampoInput = (props) => {
     inputProps={{
       min: props.rangeMin,
       max: props.rangeMax,
+      inputMode: "numeric",
     }}
     onKeyPress={(event) => {
       const key = event.key

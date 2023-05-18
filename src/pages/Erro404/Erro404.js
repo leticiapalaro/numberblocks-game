@@ -2,39 +2,25 @@ import styled from 'styled-components';
 import LinksNavegacao from '../../components/LinksNavegacao';
 
 const Erro404Container = styled.div`
-  background: url('./img/background2.png');
+  background: url('./img/background2.webp');
   background-size: cover;
-  color: black;
-  width: 50vw;
-  height: 50vh;
-  margin: 6rem auto;
-  border-radius: 40px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-  text-align: center;
-  display: flex;
-  align-items: center;
-  font-weight: bolder;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  height: 70vh;
+  margin: 5vh 10vw;
+  padding: 5vh 5vw;
+  width: 80vw;
 
   .mensagem-erro{
-    display: flex;
-    flex-direction: column;
-    background: rgba(255, 255, 255, 0.8);
-    width: 80%;
-    margin: auto;
-    border-radius: 40px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    background: rgba(0,0,0,0.9);
+    color: #FAEBD7;
     padding: 1rem;
+    text-align: center;
   }
 
-  h2 {
-    color: red;
-    font-size: 2rem;
-    margin: 0;
-  }
-
-  @media only screen and (max-width: 768px) {
-    width: 85vw;
-    height: 80vh;
+  @media screen and (min-width: 1024px) {
+    width: 40vw;
+    height: 55vh;
+    margin: auto;
   }
 `
 
@@ -45,8 +31,8 @@ export const Erro404 = () => {
         <h2>Erro404</h2>
         <p>Muitos Numberblocks procuraram sua página, mas não encontraram.<br/>
         Talvez um desses links possa te ajudar:</p>
-        <LinksNavegacao/>
       </div>
+      <LinksNavegacao/>
     </Erro404Container>
   )
 }

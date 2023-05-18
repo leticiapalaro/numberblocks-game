@@ -1,17 +1,17 @@
 import styled from 'styled-components'
 
 const FormStyles = styled.form`
+  background: rgba(0,0,0,0.9);
+  height: 50vh;
+  margin: 2.5vh 5vw;
+  padding: 1vh 5vw;
   text-align: center;
-  width: 85vw;
-  margin: 6rem auto 0 auto;
-  padding: 1rem;
-  background-color: rgba(255, 255, 255, 0.87);
-  border-radius: 20px;
-  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
-  color: rgb(25, 118, 210);
+  width: 90vw;
 
-  @media only screen and (min-width: 1024px) {
-    max-width: 40vw;
+  @media screen and (min-width: 1024px) {
+    height: 70vh;
+    width: 50vw;
+    margin: auto;
   }
 `
 
