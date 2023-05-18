@@ -3,6 +3,9 @@ import styled from 'styled-components';
 const PistaResultadoContainer = styled.p`
   margin-bottom: 1rem;
   text-transform: uppercase;
+  img {
+    width: 70vw;
+  }
 
   @media screen and (min-width: 1024px) {
     img {
