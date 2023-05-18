@@ -1,6 +1,7 @@
 import { createGlobalStyle } from "styled-components";
 
 export const GlobalStyle = createGlobalStyle`
+
 * {
   border-radius: 20px;
   box-sizing: border-box;
@@ -12,6 +13,7 @@ export const GlobalStyle = createGlobalStyle`
   text-decoration: none;
 
   body {
+    font-family: 'Dosis', sans-serif;
     background: url('./img/background.webp');
   }
 
