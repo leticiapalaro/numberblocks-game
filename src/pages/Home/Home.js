@@ -10,12 +10,16 @@ const HomeContainer = styled.div`
   padding: 5vh 5vw;
   width: 80vw;
 
+  .img-logo {
+      width: 70vw;
+    }
+
   @media screen and (min-width: 1024px) {
     width: 40vw;
     height: 80vh;
     margin: auto;
 
-    img {
+    .img-logo {
       width: 30vw;
     }
   }
