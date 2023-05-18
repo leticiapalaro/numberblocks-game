@@ -12,7 +12,8 @@ const HomeContainer = styled.div`
   width: 80vw;
 
   .img-logo {
-      width: 550px;
+      width: 230px;
+      height: 120px;
       max-width: 70vw;
       margin: auto;
     }
@@ -23,6 +24,8 @@ const HomeContainer = styled.div`
     margin: auto;
 
     .img-logo {
+      width: 530px;
+      height: 300px;
       max-width: 40vw;
       margin: auto;
     }
