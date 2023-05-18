@@ -1,24 +1,58 @@
 {
-  "build": {
-    "pages": 1,
-    "images": 4,
-    "scripts": 1,
-    "fonts": 1,
-    "stylesheets": 2,
-    "documents": 1,
-    "media": 0,
-    "other": 0,
-    "thirdParty": 2
-  },
-  "server": {
-    "pages": 1,
-    "images": 4,
-    "scripts": 1,
-    "fonts": 1,
-    "stylesheets": 2,
-    "documents": 1,
-    "media": 0,
-    "other": 0,
-    "thirdParty": 2
-  }
+  "resources": [
+    {
+      "type": "image",
+      "budget": {
+        "maximum": 4,
+        "size": "450KB"
+      }
+    },
+    {
+      "type": "script",
+      "budget": {
+        "maximum": 1,
+        "size": "150KB"
+      }
+    },
+    {
+      "type": "font",
+      "budget": {
+        "maximum": 1,
+        "size": "50KB"
+      }
+    },
+    {
+      "type": "stylesheet",
+      "budget": {
+        "maximum": 2,
+        "size": "5KB"
+      }
+    },
+    {
+      "type": "document",
+      "budget": {
+        "maximum": 1,
+        "size": "2KB"
+      }
+    },
+    {
+      "type": "media",
+      "budget": {
+        "maximum": 0
+      }
+    },
+    {
+      "type": "other",
+      "budget": {
+        "maximum": 0
+      }
+    },
+    {
+      "type": "third-party",
+      "budget": {
+        "maximum": 2,
+        "size": "40KB"
+      }
+    }
+  ]
 }
