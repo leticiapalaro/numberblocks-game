@@ -17,11 +17,6 @@ export const GlobalStyle = createGlobalStyle`
     background: url('./img/background.webp');
   }
 
-  img {
-    max-width: 70vw;
-  }
-
-
   .destaque {
     font-size: 1.5rem;
   }
